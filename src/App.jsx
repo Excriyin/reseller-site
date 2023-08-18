@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import Upgrade from './pages/Upgrade';
 import Renew from './pages/Renew';
 import { ChakraProvider, Container } from '@chakra-ui/react';
-import NotFoundPage from './NotFoundPage.jsx';
+import NotFoundPage from './pages/NotFoundPage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
