@@ -28,22 +28,12 @@ export default function App() {
             <Route exact path="/" component={Upgrade} />
             <Route exact path="/upgrade" component={Upgrade} />
             <Route exact path="/renew" component={Renew} />
+            <Route exact path="*" component={NotFoundPage} />
           </Switch>
         </Router>
         <Footer />
       </Container>
     </ChakraProvider>
+
   );
-}
-class App extends React.Component {
-  render(){
-      return(
-          <BrowserRouter>
-              <Switch>
-                  <Route exact path='/' component={Upgrade} />
-                  <Route path="*" component={NotFoundPage} />
-              </Switch>
-          </BrowserRouter>
-      )
-  }
 }
