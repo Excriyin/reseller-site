@@ -29,6 +29,14 @@ export default function Navbar() {
                     >
                         Renew
                     </Link>
+                    <Link
+                        mx={4}
+                        href="http://spotmybackup.com"
+                        fontWeight="bold"
+                        _hover={{ color: 'green.500' }}
+                    >
+                        Migrator
+                    </Link>
                 </Box>
             </Box>
         </Box>
