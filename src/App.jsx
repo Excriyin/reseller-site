@@ -1,10 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import Upgrade from './pages/Upgrade';
 import Renew from './pages/Renew';
 import { ChakraProvider, Container } from '@chakra-ui/react';
+import NotFoundPage from './NotFoundPage.jsx';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+
 
 export default function App() {
   return (
@@ -32,4 +34,16 @@ export default function App() {
       </Container>
     </ChakraProvider>
   );
+}
+class App extends React.Component {
+  render(){
+      return(
+          <BrowserRouter>
+              <Switch>
+                  <Route exact path='/' component={Upgrade} />
+                  <Route path="*" component={NotFoundPage} />
+              </Switch>
+          </BrowserRouter>
+      )
+  }
 }
