@@ -330,7 +330,7 @@ export default function Renew() {
             console.error(error);
             return toast({
                 title: 'Error',
-                description: 'An unexpected error has ocurred while sending upgrade request, contact us!',
+                description: 'An unexpected error has ocurred while sending renewal request, contact us!',
                 status: 'error',
                 duration: 7000,
                 isClosable: true
