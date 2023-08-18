@@ -4,8 +4,10 @@ import PageNotFound from '../assets/404error.png';
 class NotFoundPage extends React.Component{
     render(){
         return <div>
+          <div className="image-container">
             <img src={PageNotFound} 
-            style="visibility:visible;height:100%;left:0;position:absolute;top:0;width:100%" />
+            />
+             </div>
             <p style={{textAlign:"center"}}>
               <Link to="/">Go to Home </Link>
             </p>
