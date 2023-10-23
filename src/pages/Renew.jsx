@@ -278,7 +278,7 @@ export default function Renew() {
 
     useEffect(() => {
         const fetchCountries = async () => {
-            const response = await fetch('https://api.spotiprem.com/api/v1/stock', {
+            const response = await fetch('https://rested-new-buck.ngrok-free.app/api/v1/stock', {
                 headers: {
                     'Content-Type': 'application/json'
                 }
@@ -304,7 +304,7 @@ export default function Renew() {
         try {
             setIsLoading(true)
 
-            const response = await fetch('https://api.spotiprem.com/api/v1/renew', {
+            const response = await fetch('https://rested-new-buck.ngrok-free.app/api/v1/renew', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
