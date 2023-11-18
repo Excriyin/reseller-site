@@ -8,6 +8,7 @@ export default function Renew() {
     const [password, setPassword] = useState("");
     const [newEmail, setNewEmail] = useState("");
     const [newPassword, setNewPassword] = useState("");
+    const [migrate, setMigrate] = useState("");
     const [country, setCountry] = useState("");
     const [countries, setCountries] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
@@ -291,9 +292,9 @@ export default function Renew() {
     async function handleSubmit(e) {
         e.preventDefault();
 
-        if (!key || !email || !password || !country || !newEmail || !newPassword) {
+        if (!key || !email || !password || !country || !newEmail || !newPassword  || !migrate) {
             return toast({
-                title: 'Missing data',
+                title: 'Missing data', 
                 description: 'Please fill all required data.',
                 status: 'error',
                 duration: 7000,
@@ -315,7 +316,8 @@ export default function Renew() {
                     password,
                     country,
                     newEmail,
-                    newPassword
+                    newPassword,
+                    migrate
                 })
             }).then(res => res.json())
 
@@ -364,6 +366,11 @@ export default function Renew() {
                             <Input type='email' id="email" placeholder="your-new@email.com" onChange={e => setNewEmail(e.target.value)} />
                             <FormLabel pt={2}>New Spotify Password</FormLabel>
                             <Input type='password' id="password" placeholder="***********" onChange={e => setNewPassword(e.target.value)} />
+                            <FormLabel>Migrate Playlists</FormLabel>
+                            <Select  onChange={e => setMigrate(e.target.value)}>
+                            <option className='bg-primary text-black' value='yes'>Yes</option>
+					  <option className='bg-primary text-black' value='no'>No</option>
+                            </Select>
                             <FormLabel>Country</FormLabel>
                             <Select placeholder='Select country' pb={5} onChange={e => setCountry(e.target.value)}>
                                 {countries.map((country) => {
