@@ -21,7 +21,7 @@ export default function Footer() {
             <div className='mt-4 mb-5 flex w-full'>
               <ul className='flex w-full flex-col items-center justify-between md:flex-row lg:flex lg:space-x-12'>
                 <p className='clashDisplayRegular flex text-xs font-medium leading-relaxed text-white md:text-base'>
-                  © 2023 Spotify. Made by FocusedStudio
+                  © 2023 SpotiUprader. Not affiliated with Spotify.
                 </p>
                 <div className='hidden w-3/12 justify-between lg:flex align-center'>
                   <li>

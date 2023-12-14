@@ -6,19 +6,19 @@ import Purchase from '../../components/Purchase';
 const leftData = [
   {
     id: 1,
-    title: 'Why is Webflow the best nocode tool?',
+    title: 'test 1',
     description:
       'Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor',
   },
   {
     id: 3,
-    title: 'When did Webflow was founded?',
+    title: 'test 3',
     description:
       'Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor',
   },
   {
     id: 5,
-    title: 'Is NoCode the future of the web?',
+    title: 'test 5',
     description:
       'Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor',
   },
@@ -27,19 +27,19 @@ const leftData = [
 const rightData = [
   {
     id: 2,
-    title: 'How to launch a Webflow website?',
+    title: 'test 2',
     description:
       'Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor',
   },
   {
     id: 4,
-    title: 'Who founded BRIX Templates?',
+    title: 'test 4',
     description:
       'Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor',
   },
   {
     id: 6,
-    title: 'Who are the Webflow founders?',
+    title: 'test 6',
     description:
       'Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor',
   },
