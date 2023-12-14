@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo/logo.png';
-import telegram from '../assets/images/footer/telegram.svg';
-import discord from '../assets/images/footer/discord.svg';
 
 export default function Footer() {
   return (
@@ -60,15 +58,7 @@ export default function Footer() {
                       FAQs{' '}
                     </a>
                   </li>
-                </div>
-                <div className='flex justify-between'>
-                  <Link to=' https://discord.gg/spotiprem'>
-                    <img src={discord} />
-                  </Link>
-                  <Link to='https://t.me/spotipremcom'>
-                    <img src={telegram} />
-                  </Link>
-                </div>
+                </div>            
               </ul>
             </div>
           </div>
