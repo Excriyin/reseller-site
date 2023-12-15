@@ -1,6 +1,7 @@
 import React from 'react';
 import { useToast } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
+import Purchase from '../components/Purchase';
 import SectionTitle2 from '../common/SectionTitle2';
 import num2 from '../assets/images/tutorial/02.png';
 import renewImg from '../assets/images/renew/renew-img.png';
@@ -389,7 +390,7 @@ export default function Renew() {
                       Upgrade key
                     </label>
                     <input
-                      placeholder='Enter your key'
+                      placeholder='JohnDoe'
                       className='border-[#1ED760] pr-6 pl-4 py-3 w-full text-base bg-transparent rounded-lg border outline-none placeholder-normal focus:border-primary'
                       onChange={(e) => setKey(e.target.value)}
                       value={key}
@@ -403,7 +404,7 @@ export default function Renew() {
                       Email Address
                     </label>
                     <input
-                      placeholder='Enter your email'
+                      placeholder='your@email.com'
                       className='border-[#1ED760] pr-6 pl-4 py-3 w-full text-base bg-transparent rounded-lg border outline-none placeholder-normal focus:border-primary'
                       onChange={(e) => setEmail(e.target.value)}
                       value={email}
@@ -418,7 +419,7 @@ export default function Renew() {
                     </label>
                     <input
                       type='password'
-                      placeholder='Enter your password'
+                      placeholder='************'
                       className='border-[#1ED760] pr-6 pl-4 py-3 w-full text-base bg-transparent rounded-lg border outline-none placeholder-normal focus:border-primary'
                       onChange={(e) => setPassword(e.target.value)}
                       value={password}
@@ -492,6 +493,10 @@ export default function Renew() {
                 </form>
               </div>
             </div>
+          </div>
+
+          <div className='mt-20'>
+            <Purchase />
           </div>
         </div>
       </section>

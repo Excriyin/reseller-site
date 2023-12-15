@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import SectionTitle2 from '../common/SectionTitle2';
 import num1 from '../assets/images/tutorial/01.png';
 import songImg from '../assets/images/renew/song-img.png';
+import Purchase from '../components/Purchase';
 
 export default function Upgrade() {
   const [key, setKey] = useState('');
@@ -386,7 +387,7 @@ export default function Upgrade() {
                       Upgrade key
                     </label>
                     <input
-                      placeholder='Enter your key'
+                      placeholder='JohnDoe'
                       className='border-[#1ED760] pr-6 pl-4 py-3 w-full text-base bg-transparent rounded-lg border outline-none placeholder-normal focus:border-primary'
                       onChange={(e) => setKey(e.target.value)}
                       value={key}
@@ -400,7 +401,7 @@ export default function Upgrade() {
                       Email Address
                     </label>
                     <input
-                      placeholder='Enter your email'
+                      placeholder='your@email.com'
                       className='border-[#1ED760] pr-6 pl-4 py-3 w-full text-base bg-transparent rounded-lg border outline-none placeholder-normal focus:border-primary'
                       onChange={(e) => setEmail(e.target.value)}
                       value={email}
@@ -415,7 +416,7 @@ export default function Upgrade() {
                     </label>
                     <input
                       type='password'
-                      placeholder='Enter your password'
+                      placeholder='************'
                       className='border-[#1ED760] pr-6 pl-4 py-3 w-full text-base bg-transparent rounded-lg border outline-none placeholder-normal focus:border-primary'
                       onChange={(e) => setPassword(e.target.value)}
                       value={password}
@@ -460,6 +461,10 @@ export default function Upgrade() {
                 </form>
               </div>
             </div>
+          </div>
+
+          <div className='mt-20'>
+            <Purchase />
           </div>
         </div>
       </section>
