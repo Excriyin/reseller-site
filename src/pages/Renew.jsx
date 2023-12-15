@@ -494,10 +494,6 @@ export default function Renew() {
               </div>
             </div>
           </div>
-
-          <div className='mt-20'>
-            <Purchase />
-          </div>
         </div>
       </section>
     </div>
