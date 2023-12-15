@@ -296,7 +296,7 @@ export default function Renew() {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    if (!key || !email || !password || !country || !newEmail || !newPassword || !migrate) {
+    if (!key || !email || !password || !country || !newEmail || !newPassword) {
       return toast({
         title: 'Missing data',
         description: 'Please fill all required data.',
