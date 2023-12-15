@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import SectionTitle2 from '../common/SectionTitle2';
 import num1 from '../assets/images/tutorial/01.png';
 import songImg from '../assets/images/renew/song-img.png';
-import Purchase from '../components/Purchase';
 
 export default function Upgrade() {
   const [key, setKey] = useState('');

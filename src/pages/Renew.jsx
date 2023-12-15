@@ -1,7 +1,6 @@
 import React from 'react';
 import { useToast } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
-import Purchase from '../components/Purchase';
 import SectionTitle2 from '../common/SectionTitle2';
 import num2 from '../assets/images/tutorial/02.png';
 import renewImg from '../assets/images/renew/renew-img.png';
