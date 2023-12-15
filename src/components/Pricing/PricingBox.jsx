@@ -2,14 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 
 const PricingBox = (props) => {
-  const {
-    price,
-    packageName,
-    children,
-    plan,
-    sellixProductId
-  } = props;
-
+  const { packageName, children, plan, sellixProduct } = props;
 
   return (
     <>
@@ -27,12 +20,14 @@ const PricingBox = (props) => {
               <p className='clashDisplayRegular m-auto mb-6 w-fit bg-[#ffffff26] px-5 py-2 text-lg !font-light text-white'>
                 {packageName}
               </p>
-              <span className='clashDisplayRegular text-5xl'>${price}</span>
+              <span className='clashDisplayRegular text-5xl'>
+                ${sellixProduct?.price}
+              </span>
             </h3>
             <div className='mb-6'>{children}</div>
             <button
-              data-sellix-product={sellixProductId}
-              type="submit"
+              data-sellix-product={sellixProduct?.uniqid}
+              type='submit'
               className='clashDisplayRegular flex w-full items-center justify-center rounded-xl border-[1px] border-primary py-3 text-base font-semibold text-black duration-300 ease-in-out bg-primary hover:bg-primary/80'
             >
               Purchase

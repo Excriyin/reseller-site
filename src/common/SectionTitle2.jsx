@@ -19,7 +19,7 @@ const SectionTitle2 = ({
       >
         <h2 className='power mb-4 text-3xl relative font-bold leading-tight text-white sm:text-4xl md:text-[45px] clashDisplayRegular'>
         {lineImgSrc && (
-            <div className='absolute top-[-140px] w-full'>
+            <div className='absolute top-[-140px] w-full z-[-1]'>
               <img
                 className='pointer-events-none select-none'
                 src={line}

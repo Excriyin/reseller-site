@@ -55,11 +55,11 @@ const Pricing = () => {
               <div className='grid w-10/12 grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 xl:grid-cols-3'>
                 <PricingBox
                   packageName='1x Upgrade'
-                  price='2.45'
+                  // price='2.45'
                   subtitle='One upgrade key'
                   index={0}
                   plan={1}
-                  sellixProductId={products?.[0]?.uniqid} // pass first product unique id
+                  sellixProduct={products?.[0]} // pass first sellix product
                 >
                   <OfferList text='Lifetime Warranty' status='active' />
                   <OfferList text='Automated Replacements' status='active' />
@@ -69,10 +69,10 @@ const Pricing = () => {
 
                 <PricingBox
                   packageName='3x Upgrades'
-                  price='6.65'
+                  // price='6.65'
                   index={1}
                   plan={3}
-                  sellixProductId={products?.[1]?.uniqid} // pass second product unique id
+                  sellixProduct={products?.[1]} // pass second sellix product
                 >
                   <OfferList text='Lifetime Warranty' status='active' />
                   <OfferList text='Automated Replacements' status='active' />
@@ -82,11 +82,11 @@ const Pricing = () => {
 
                 <PricingBox
                   packageName='6x Upgrades'
-                  price='12.25'
+                  // price='12.25'
                   subtitle='Six upgrade keys'
                   index={2}
                   plan={6}
-                  sellixProductId={products?.[2]?.uniqid} // pass third product unique id
+                  sellixProduct={products?.[2]} // pass third sellix product
                 >
                   <OfferList text='Lifetime Warranty' status='active' />
                   <OfferList text='Automated Replacements' status='active' />

@@ -47,7 +47,7 @@ const Purchase = () => {
                       },
                     }}
                   >
-                    <div className='absolute top-[-20px] w-full'>
+                    <div className='absolute top-[-20px] w-full z-[-1]'>
                       <img
                         className='pointer-events-none select-none'
                         src={line}
