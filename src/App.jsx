@@ -10,24 +10,9 @@ import Home from './pages/Home/Home';
 import Pricing from './pages/Pricing/Pricing';
 import Faq from './pages/Faq/Faq';
 import { useEffect } from 'react';
+import { TopArrow } from './assets/SVGComponents';
 
-const TopArrow = () => {
-  return (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='25'
-      height='17'
-      viewBox='0 0 31 17'
-      fill='none'
-    >
-      <path
-        d='M1 16L14.781 1.74378C15.1741 1.33714 15.8259 1.33714 16.219 1.74378L30 16'
-        stroke='black'
-        strokeWidth='2'
-      />
-    </svg>
-  );
-};
+
 
 export default function App() {
   useEffect(() => {
