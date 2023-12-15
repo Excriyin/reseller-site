@@ -387,6 +387,7 @@ export default function Upgrade() {
                       Upgrade key
                     </label>
                     <input
+                    type='key'
                       placeholder='JohnDoe'
                       className='border-[#1ED760] pr-6 pl-4 py-3 w-full text-base bg-transparent rounded-lg border outline-none placeholder-normal focus:border-primary'
                       onChange={(e) => setKey(e.target.value)}
@@ -401,6 +402,7 @@ export default function Upgrade() {
                       Email Address
                     </label>
                     <input
+                    type='email'
                       placeholder='your@email.com'
                       className='border-[#1ED760] pr-6 pl-4 py-3 w-full text-base bg-transparent rounded-lg border outline-none placeholder-normal focus:border-primary'
                       onChange={(e) => setEmail(e.target.value)}
