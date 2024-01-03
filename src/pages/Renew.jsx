@@ -526,7 +526,7 @@ export default function Renew() {
                       className='flex justify-center items-center px-9 py-4 w-full text-base text-black rounded-xl transition duration-300 ease-in-out bg-primary hover:bg-opacity-80 hover:shadow-signUp power font-bold mt-5'
                       disabled={isLoading}
                     >
-                      Renew Account
+                      {isLoading ? 'Loading...' : 'Renew Account'}
                     </button>
                   </div>
                 </form>
